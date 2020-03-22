@@ -38,9 +38,9 @@ Roller Blind interface documentation:
 Integrating the remote control of an Roller Blind is not sold or provided out-of-the-box (affordable) by the major Home Automation brands.
 I decided to use some Philips Hue technology to control my Roller Blind, because that would easily integrate into my existing Home Automation network which already includes a Philips Hue Bridge.
 
-But where to get a single Hue Module to control an homemade IoT solution?
-Here, a big thank you to  "Kalte Lötstelle" who published videos on disassembling a Philips Hue White E27 bulb:
-https://www.youtube.com/watch?v=yIImEukDihs
+But where to get a single Hue Module to control an homemade IoT solution?<br/>
+Here, a big thank you to  "Kalte Lötstelle" who published videos on disassembling a Philips Hue White E27 bulb:<br/>
+https://www.youtube.com/watch?v=yIImEukDihs<br/>
 https://www.youtube.com/watch?v=CxE5SwzcmWU
 
 The following photo shows my result of getting the Hue module out of the bulb. I continued debugging the Hue module circuit to get it working with external 3.3V and found the pin sending out the PWM signal.
