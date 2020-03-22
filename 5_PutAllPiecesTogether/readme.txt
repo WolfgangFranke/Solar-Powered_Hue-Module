@@ -4,3 +4,4 @@ This folder contains how to integrating all pieces:
 - trigger the Roller Blind up/down using a Home Automation solution, 
 - connect the Solar Charger MPT controller, 
 - use the Power Meter to measure and visualize the charge energy and battery status of the Roller Blind.
+ 
