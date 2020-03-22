@@ -43,7 +43,7 @@ Here, a big thank you to  "Kalte Lötstelle" who published videos on disassembli
 https://www.youtube.com/watch?v=yIImEukDihs<br/>
 https://www.youtube.com/watch?v=CxE5SwzcmWU
 
-The following photo shows my result of getting the Hue module out of the bulb. I continued debugging the Hue module circuit to get it working with external 3.3V and found the pin sending out the PWM signal.
+The following photo shows my result of getting the Hue module out of the bulb. I continued debugging the Hue module circuit and got it working with external 3.3V quickly. By using my oscilloscope and the Hue-App I also found the output-pin sending the PWM signal as 3.3V TTL.
 
 <img src="2_HueModule_fromWhiteE27bulb/2_Philips_Hue_White_Bulb_Hack_Photo02.jpg" width="500">
 
