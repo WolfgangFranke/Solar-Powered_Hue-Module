@@ -41,5 +41,9 @@ I decided to use some Philips Hue technology to control my Roller Blind, because
 But where to get a single Hue Module to control an homemade IoT solution?
 
 
-<img src="1_RollerBlind/1_RollerBlind_Photo06.jpg" width="500">
+<img src="2_HueModule_fromWhiteE27bulb/2_Philips_Hue_White_Bulb_Hack_Photo02.jpg.jpg" width="500">
+
+Philips Hue Module interface documentation: 
+
+<img src="2_HueModule_fromWhiteE27bulb/2_Philips_Hue_White_Bulb_Hack_Photo03.jpg.jpg" width="500">
 
