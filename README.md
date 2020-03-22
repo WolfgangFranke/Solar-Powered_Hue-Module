@@ -24,10 +24,10 @@ A 3 stranded wire is soldered to the pads and will connect Vdd=8,4V and GND and 
 
 <img src="1_RollerBlind/1_RollerBlind_Photo06.jpg" width="500">
 
-This documents the interface: 
-- Vdd is the battery voltage, that pad will be used to charge the battery by solar power, and to supply the Hue module after converting it to 3,3V.
-- GND from Roller Blind connects to GNS of Hue module and solar charger controller.
-- Key1 is the trigger pin to move the blind up/down, it's L-active and needs to be Low for 0,5s to 2 sec to trigger. FYI: in that Roller Blind circuitry, the trigger pin is the output of an Hall-IC with a Pull-up of 47K.
+Roller Blind interface documentation: 
+- Pad 8,6V: This positive battery voltage pin (as it is 2x Li-Ion, it should be 8,4V) will be used to charge the battery by solar power via MPPT controller, as well as to generate the 3.3V power required by the Hue Zigbee module.
+- Pad GND: That is negative battery voltage pin from Roller Blind, it connects to GND of the Hue module and to the GND of the solar Module and MPPT controller.
+- Pad Key1: This is the trigger pin to move the blind up/down. It's L-active and needs to be Low for between 0,5s to 2 sec to trigger. FYI: in that Roller Blind circuitry, the trigger pin is the output of an Hall-IC with a Pull-up of 47K, which fires when a manual handle is pulled.
 
 <img src="1_RollerBlind/1_RollerBlind_Photo04.jpg" width="500">
 
