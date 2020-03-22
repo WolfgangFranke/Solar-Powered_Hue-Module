@@ -12,3 +12,22 @@ This story contains 5 work major tasks:
 
 5. Integrating all pieces: connect the Philips Hue module to the Roller Blind, use a LTC3588 as very efficient voltage converter to 3,3 Volts for the Hue Module, trigger the Roller Blind up/down using a Home Automation solution, connect the Solar Charger, use the Power Meter to measure and visualize the charge energy and battery status of the Roller Blind.
 
+
+## 1 - The Roller Blind
+
+Roller Blind I got from eBay is made by "Coulisse B.V. Vonderweg 48 7468 DC Enter The Netherlands". 
+
+<img src="1_RollerBlind/1_RollerBlind_Photo01.jpg" width="500">
+
+It's easy to disassemble and all necessary connection points are well documented on the circuit board.
+A 3 stranded wire is soldered to the pads and will connect Vdd=8,4V and GND and the Key1-trigger pin (active low) to the outside Hue Module, as shown here:
+
+<img src="1_RollerBlind/1_RollerBlind_Photo06.jpg" width="500">
+
+This documents the interface: 
+- Vdd is the battery voltage, that pad will be used to charge the battery by solar power, and to supply the Hue module after converting it to 3,3V.
+- GND from Roller Blind connects to GNS of Hue module and solar charger controller.
+- Key1 is the trigger pin to move the blind up/down, it's L-active and needs to be Low for 0,5s to 2 sec to trigger. FYI: in that Roller Blind circuitry, the trigger pin is the output of an Hall-IC with a Pull-up of 47K.
+
+<img src="1_RollerBlind/1_RollerBlind_Photo04.jpg" width="500">
+
