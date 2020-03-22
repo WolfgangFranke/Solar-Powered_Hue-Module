@@ -15,7 +15,7 @@ This story contains 5 work major tasks:
 
 ## 1 - The Roller Blind
 
-Roller Blind I got from eBay is made by "Coulisse B.V. Vonderweg 48 7468 DC Enter The Netherlands". 
+The Roller Blind I got from eBay is made by "Coulisse B.V. Vonderweg 48 7468 DC Enter The Netherlands". 
 
 <img src="1_RollerBlind/1_RollerBlind_Photo01.jpg" width="500">
 
@@ -28,6 +28,7 @@ Roller Blind interface documentation:
 - Pad 8,6V: This positive battery voltage pin (as it is 2x Li-Ion, it should be 8,4V) will be used to charge the battery by solar power via MPPT controller, as well as to generate the 3.3V power required by the Hue Zigbee module.
 - Pad GND: That is negative battery voltage pin from Roller Blind, it connects to GND of the Hue module and to the GND of the solar Module and MPPT controller.
 - Pad Key1: This is the trigger pin to move the blind up/down. It's L-active and needs to be Low for between 0,5s to 2 sec to trigger. FYI: in that Roller Blind circuitry, the trigger pin is the output of an Hall-IC with a Pull-up of 47K, which fires when a manual handle is pulled.
+- Pad 3,3V: unused (the Roller Blind uses the linear VDO TLV704-33 to generate it's internal 3.3 Volts. To reduce the energy consumption of an external circuit, especially of the used Hue module, it is much more energy efficient to use efficient power switch converter to generate 3.3V)
 
 <img src="1_RollerBlind/1_RollerBlind_Photo04.jpg" width="500">
 
