@@ -6,7 +6,7 @@ This story contains 5 work major tasks:
 
 2. Connecting a Zigbee switch module to open/close the Roller Blind remotely by your Home Automation application. I show you how to re-use an ordinary Philips Hue module from an older Hue White E27 bulb.
 
-3. Building a Solar Charger to supply both, the Roller Blind and the ZigBee module, to let them work 24x7 independently from a wall socket (I use 2 cheap solar modules, an LT3256 MPPT solar charger controller, and made a Li-Ion battery emulator based on TL431 voltage adjustable shunt regulators).
+3. Building a Solar Charger to supply both, the Roller Blind and the ZigBee module, to let them work 24x7 independently from a wall socket (I use 2 cheap solar modules, an LT3256 MPPT solar Li-Ion charger controller, and made a Li-Ion battery emulator based on TL431 voltage adjustable shunt regulators).
 
 4. Programming a Power Meter to measeure the solar energy harvested every day and to visualize it on an IoT Cloud (implemented with Arduino: ESP32, INA219, OLED, WiFi Manager, NTP, ThingSpeak by MathWorks).
 
@@ -57,7 +57,7 @@ Philips Hue Module interface documentation:
 <img src="2_HueModule_fromWhiteE27bulb/2_Philips_Hue_White_Bulb_Hack_Photo03.jpg" width="500">
 
 
-## 3 - 
+## 3 - Solar Cells and the LT3256 MPPT Li-Ion charger controller
 
 After measuring the energy harvesting with Solar Cell modules of different sizes, Watts and Voltages, I decided to mount 2 thin traveller modules of 12 Volt and connect them in series. That way they produce up to 1A at 28V in full sunshine, but the MPPT-controller let them also generate some Milli-Amperes at 16V on a cloudy day.<br/>
 <br/>
