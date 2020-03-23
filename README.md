@@ -1,4 +1,6 @@
 # A Solar Powered Philips Hue Module (a 3,3V PWM dimmer)
+read time:        1 hour
+understand time:  1 day
 
 ## This project will tell you the story of building a Solar Power solution for IoT devices operating 24x7. In my case it's an autonomous remote control receiver for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
 
@@ -35,7 +37,7 @@ Roller Blind interface documentation:
 - Pad 3,3V: unused (the Roller Blind circuit uses the linear VDO TLV704-33 to generate it's internal 3.3 Volts. To reduce the energy consumption of an external circuit, especially of the used Hue module, it is much more energy efficient to use little power switch converter to generate 3.3V from the 8.4V battery power.)
 
 <img src="1_RollerBlind/1_RollerBlind_Photo04.jpg" width="500">
-
+<br/>
 
 ## 2 - Hacking a Philips Hue Module from Hue White E27 bulb
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/2_HueModule_fromWhiteE27bulb
@@ -60,7 +62,7 @@ Philips Hue Module interface documentation:
 - not used: this Philips Hue module can be powered by an 5V to 12V source, and then provides +3,3V on the 3,3V pad.
 
 <img src="2_HueModule_fromWhiteE27bulb/2_Philips_Hue_White_Bulb_Hack_Photo03.jpg" width="500">
-
+<br/>
 
 ## 3 - Solar Cells and the LT3256 MPPT Li-Ion charger controller
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/3_SolarModules_MPPT-Controller
@@ -87,7 +89,7 @@ To test the energy harvesting from the solar cells with the LT3256 MPPT controll
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_06_CCCV-Load-Tester_TL431.jpg" width="500">
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_05_CCCV-Load-Tester_Schematic_TL431.jpg" width="500">
-
+<br/>
 
 ## 4 - Arduino ESP32 Solar Power-Meter
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/4_Arduino_ESP32_SolarPowerMeter
