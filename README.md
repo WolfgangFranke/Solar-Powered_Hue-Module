@@ -145,8 +145,8 @@ But soldering the LTC3855 manually is a bit difficult, because the bottom of the
 <img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo07.jpg" width="500">
 <br/>
 <br/>
-Finally, after all pieces got connected successfully, you want to go to the ThingSpeak IoT Cloud portal (https://www.thingspeak.com), or use e.g. the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data over a longer time range.<br/>
-The screenshot below shows the graphical output on ThingSpeak, Field-2 is the battery voltage. It can be seen that day 3 and day 4 were very cloudy and the solar module was not able to deliver enough energy to compensate the consumption of the preceding day (24h).<br/>
+Finally, after all pieces got connected, you want to go to the ThingSpeak IoT Cloud portal (https://www.thingspeak.com), or use e.g. the Thingview App (by Marcelo Prolo, in iOS App store), to track your power data over a longer time range.<br/>
+The screenshot below shows the graphical output on ThingSpeak, the upper-right Field-2 chart shows the battery voltage. It can be seen that day 3 and day 4 were very cloudy and the solar module was not able to deliver enough energy to compensate the consumption of the preceding day (24h).<br/>
 To lower the risk of a service interruption for the IoT device, the battery needs to be large enough to buffer a couple of cloudy days, and the solar system needs to be strong enough to quickly re-charge the battery in case of good sunshine. That can be seen in day 5, when the battery was very quickly charged up to 100% (8,4V), and after the CCCV charge-stop with some discharging, then also a second complete re-charge was done that day.<br/><br/>
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="500">
 <br/>
