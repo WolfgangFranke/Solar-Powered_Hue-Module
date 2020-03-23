@@ -37,7 +37,7 @@ Roller Blind interface documentation:
 ## 2 - Hacking a Philips Hue Module from Hue White E27 bulb
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/2_HueModule_fromWhiteE27bulb
 
-Integrating the remote control of an Roller Blind is not sold or provided out-of-the-box (affordable) by the major Home Automation brands.
+A seamlessly integrated remote control of an Roller Blind is not sold or provided out-of-the-box (affordable) by the major Home Automation brands.
 I decided to use some Philips Hue technology to control my Roller Blind, because that would easily integrate into my existing Home Automation network which already includes a Philips Hue Bridge.
 
 But where to get a single Hue Module to control an homemade IoT solution?<br/>
