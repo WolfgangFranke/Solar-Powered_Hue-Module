@@ -58,3 +58,16 @@ Philips Hue Module interface documentation:
 
 
 ## 3 - 
+
+After measuring the energy harvesting with Solar Cell modules of different sizes, Watts and Voltages, I decided to mount 2 thin traveller modules of 12 Volt and connect them in series. That way they produce up to 1A at 28V in full sunshine, but the MPPT-controller let them also generate some Milli-Amperes at 16V on a cloudy day.<br/>
+<br/>
+Let's do some math:<br/>
+Hue Module:   3,3V * 20mA = 66mW<br/>
+running 24h:  24h * 66mW = 1600 mWh<br/>
+<br/>
+Solar Modul:  16V * 100mA = 1600 mW (theoretically)<br/>
+=> would need 1 hour of good sunshine to compensate the daily consumption of the Hue Module <br/>
+Solar Modul:  16V * 50mA = 800 mW (practically the energy conversion efficiency of the MPPT controller is 50%)<br/>
+=> needs 4 hour of little sunshine to compensate the daily consumption of the Hue Module <br/>
+
+<img src="3_SolarModules_MPPT-Controller/3_SolarModules_01.jpg" width="500">
