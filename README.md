@@ -108,7 +108,8 @@ The Arduino software uses the following libraries:
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo00.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo03.jpg" width="500">
 <br/>
-ThingSpeak cloud account
+As of year 2020, it's easy to open a free ThingSpeak account and setup a personal IoT channel to store lots of IoT data. Just go to https://www.thingspeak.com and signup and/or login there.<br/>
+This Arduino software is configured to send data to the IoT Cloud every 15 minutes, so you can use the ThingSpeak portal or the Thingview App (iOS) to track your power data over a long time range.
 <br/>
 <br/>
 
@@ -116,7 +117,7 @@ ThingSpeak cloud account
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/5_PutAllPiecesTogether
 
 Integrating all pieces: 
-- connect the Philips Hue module to the Roller Blind, 
+- the circuitry to connect the Philips Hue module to the Roller Blind, 
 - use a LTC3588 as very efficient voltage converter from battery 8,4V to 3,3 Volts for the Hue Module, 
 - trigger the Roller Blind up/down using a Home Automation solution, 
 - connect the Solar Charger MPPT controller, care for cable diameter in case of larger cable length,
@@ -139,7 +140,8 @@ Important to understand is that my Home Automation Switch will generate an 1s im
 <br/>
 <img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo06.jpg" width="500">
 <br/>
-The LTC3588 can act as a very efficient voltage converter for small loads. With the components used in this circuit, I tested a transmission efficiency of ≈90% for converting battery 8,4V to the 3,3 Volts at 20mA a Philips Hue module consumes. But soldering the IC is a bit difficult, because the bottom of the IC needs to be connected to GND. I used a tiny breakout board and drilled a whole to connect GND.
+The LTC3588 can act as a very efficient voltage converter for small loads. With the components used in this circuit, I tested a transmission efficiency of ≈90% for converting battery 8,4V to the 3,3 Volts at 20mA a Philips Hue module consumes. Using the LTC3588 for voltage conversation is ≈2,5 times more efficient than using a linear voltage regulator, that means your battery can power the Philips Hue module ≈2,5 times longer when encountering bad solar recharge conditions!
+But soldering the LTC3855 manually is a bit difficult, because the bottom of the IC needs to be connected to GND. I used a tiny breakout board and drilled a whole to connect GND.
 <br/>
 <img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo07.jpg" width="500">
 <br/>
