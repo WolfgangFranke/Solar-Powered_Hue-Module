@@ -1,4 +1,4 @@
-#A Solar Powered Philips Hue Module ;-)
+# A Solar Powered Philips Hue Module ;-)
 
 ## This project will tell you the story of building a Solar Power solution for IoT devices operating 24x7. In my case it's an autonomous remote control receiver for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
 
