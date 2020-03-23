@@ -68,12 +68,12 @@ running 24h:  24h * 66mW = 1600 mWh (power consumption in 1 day)<br/>
 <br/>
 Solar Modul:<br/>
 case-1: 16V * 100mA = 1600 mW (theoretically)<br/>
-        => would need 1 hour of good sunshine to compensate the daily consumption of the Hue Module <br/>
-case-2: Solar Modul:  16V * 50mA = 800 mW (practically the energy conversion efficiency of the MPPT controller is 50%)<br/>
-        => needs 4 hour of little sunshine to compensate the daily consumption of the Hue Module <br/>
+=> would need 1 hour of good sunshine to compensate the daily consumption of the Hue Module <br/>
+case-2: Solar Modul:  16V * 50mA = 800 mW (practically the conversion efficiency of the MPPT controller is 50%)<br/>
+=> needs 4 hour of little sunshine to compensate the daily consumption of the Hue Module <br/>
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_01.jpg" width="500">
-
+<br/>
 The LT3256 is an solar MPPT controller and Li-Ion charger IC, I configured it to MPP of 16V and charge voltage for 2x Li-Ion cells with a maximum current of 0,5A.
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_03_MPPT_Controller_Schematic_LT3652.jpg" width="500">
