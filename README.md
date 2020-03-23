@@ -74,7 +74,7 @@ case-2: Solar Modul:  16V * 50mA = 800 mW (practically the conversion efficiency
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_01.jpg" width="500">
 <br/>
-The LT3256 is a solar MPPT controller and Li-Ion charger IC. I modified the LT3256 borad to get a MPP of 16V and a charge voltage for 8,4V (for 2 Li-Ion) cells, with a maximum current of 0,5A.
+The LT3256 is a solar MPPT controller and Li-Ion charger IC. I modified the LT3256 borad to get a MPP of 16V and a charge voltage for 8,4V (for 2 Li-Ion) cells, with a maximum current of 0,5A. Below is the final circuit of the LT3256 board I use.
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_03_MPPT_Controller_Schematic_LT3652.jpg" width="500">
 <br/>
