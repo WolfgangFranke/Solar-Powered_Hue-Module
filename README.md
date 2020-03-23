@@ -94,8 +94,8 @@ The Arduino software uses the following libraries:<br/>
 - the ThingSpeak library from MathWorks: https://github.com/mathworks/thingspeak-arduino
 
 <br/>
-The source code of the Power Meter can be found here:<br/>
-https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/4_Arduino_ESP32_SolarPowerMeter/Solar_Power_Meter_ESP32_INA219_OLED-SH1106_v360
+The Arduino source code of the Power Meter can be found here:<br/>
+https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/4_Arduino_ESP32_SolarPowerMeter/Solar_Power_Meter_ESP32_INA219_OLED-SH1106_v360<br/>
 <br/>
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo01.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo02.jpg" width="500">
