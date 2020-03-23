@@ -1,4 +1,4 @@
-## This Git-Epic will tell you the story of building a Solar Power solution for many IoT devices. In my case it's an autonomous remote control for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
+## This project will tell you the story of building a Solar Power solution for many IoT devices. In my case it's an autonomous remote control for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
 
 This story contains 5 work major tasks:
 
@@ -106,3 +106,6 @@ The graphical output on ThingSpeak shows e.g. in Field-2 the battery voltage. It
 To lower the risk of a service interruption for the IoT device, the battery needs to be large enough to buffer a couple of cloudy days, and the solar systems needs to be strong enough to quickly fully re-charge the battery in case of good sunshine.<br/> It can be seen that day 5 very quickly charged the battery to 100% (8,4V), and after a CCCV charge stop and some discharging, also a second re-charge was done that day.<br/><br/>
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="500">
 
+## 5 - 
+
+T
