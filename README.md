@@ -78,7 +78,7 @@ The LT3256 is a solar MPPT controller and Li-Ion charger IC. I modified the LT32
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_03_MPPT_Controller_Schematic_LT3652.jpg" width="500">
 <br/>
-To test the energy harvesting from the solar cells with the LT3256 MPPT controller, there was a need for a sink of the current like a Li-Ion cell would do it. For that I made the Li-Ion battery emulator based on a couple of TL431 voltage adjustable shunt regulators.
+To test the energy harvesting from the solar cells with the LT3256 MPPT controller, there was a need for a sink of the current like a Li-Ion cell would do it. For that I made a Li-Ion battery emulator, based on a couple of TL431 voltage adjustable shunt regulators.
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_05_CCCV-Load-Tester_Schematic_TL431.jpg" width="500">
 
