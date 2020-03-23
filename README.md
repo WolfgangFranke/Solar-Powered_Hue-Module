@@ -111,7 +111,7 @@ The Arduino software uses the following libraries:
 As of year 2020, it's easy to open a free ThingSpeak account and setup a personal IoT channel to store lots of IoT data.<br/>
 This Arduino software is configured to send data to the IoT Cloud every 15 minutes. You can conveniently use the ThingSpeak portal (https://www.thingspeak.com) or for example the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data as nice graphs.
 <br/>
-<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo05_ThingviewApp.jpg" width="500">
+<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo05_ThingviewApp.jpg" width="300">
 <br/>
 <br/>
 
@@ -151,6 +151,8 @@ But soldering the LTC3855 manually is a bit difficult, because the bottom of the
 Finally, after all pieces got connected, you want to go to the ThingSpeak IoT Cloud portal (https://www.thingspeak.com), or use e.g. the Thingview App (by Marcelo Prolo, in iOS App store), to track your power data over a longer time range.<br/>
 <br/>
 The screenshot below shows the graphical output on ThingSpeak, the upper-right Field-2 chart shows the battery voltage. It can be seen that day 3 and day 4 were very cloudy and the solar module was not able to deliver enough energy in the daylight to compensate the consumption of the preceding night.<br/>
-To lower the risk of a service interruption for the IoT device, the battery capacity needs to be large enough to buffer a couple of cloudy days, and the solar system needs to be strong enough to quickly re-charge the battery in case of good but short sunshine. That can be seen in day 5, when the battery was very quickly charged up to 100% (8.4V), and after the CCCV charge-pause until discharging down to 8.2V, then also a second complete re-charge was done that day.<br/><br/>
-<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="500">
+To lower the risk of a service interruption for the IoT device, the battery capacity needs to be large enough to buffer a couple of cloudy days, and the solar system needs to be strong enough to quickly re-charge the battery in case of good but short sunshine. That can be seen in day 5, when the battery was very quickly charged up to 100% (8.4V), and after the CCCV charge-pause until discharging down to 8.2V, then also a second complete re-charge was done that day.
+<br/>
+<br/>
+<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="600">
 <br/>
