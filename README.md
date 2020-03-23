@@ -102,7 +102,7 @@ The Arduino software uses the following libraries:<br/>
 - the ThingSpeak library from MathWorks: https://github.com/mathworks/thingspeak-arduino
 <br/>
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo01.jpg" width="500">
-<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo02.jpg" width="500">
+<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo00.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo03.jpg" width="500">
 <br/>
 
