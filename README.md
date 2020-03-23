@@ -15,15 +15,16 @@ This story contains 5 work major tasks:
 5. Integrating all pieces: connect the Philips Hue module to the Roller Blind, use a LTC3588 as very efficient voltage converter to 3,3 Volts for the Hue Module, trigger the Roller Blind up/down using a Home Automation solution, connect the Solar Charger, use the Power Meter to measure and visualize the charge energy and battery status of the Roller Blind.
 
 
-## 1 - The Roller Blind
+## 1 - The battery powered Roller Blind
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/1_RollerBlind
 
-The Roller Blind I got from eBay is made by "Coulisse B.V. Vonderweg 48 7468 DC Enter The Netherlands". 
+The Roller Blind I got from eBay is made by "Coulisse B.V. Vonderweg 48 7468 DC Enter The Netherlands".<br/>
+It has a motor insight, as well a Li-Ion battery with 7,4V and 750mAh, that means a charge voltage of 8,4V and a capacity of 5,5Wh available to drive the roller blind up/down, and used to power the Philips Hue remote control receiver. It also has a USB charger port, but that one is not useful to charge from solar power.
 
 <img src="1_RollerBlind/1_RollerBlind_Photo01.jpg" width="500">
 
 It's easy to disassemble and all necessary connection points are well documented on the circuit board.
-A 3 stranded wire is soldered to the pads and will connect Vdd=8,4V and GND and the Key1-trigger pin (active low) to the outside Hue Module, as shown here:
+The 3 stranded wire is soldered to the pads and will connect Vdd=8,4V and GND and the Key1-trigger pin (active low) to the outside Hue Module, as shown here:
 
 <img src="1_RollerBlind/1_RollerBlind_Photo06.jpg" width="500">
 
@@ -64,14 +65,13 @@ Philips Hue Module interface documentation:
 ## 3 - Solar Cells and the LT3256 MPPT Li-Ion charger controller
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/3_SolarModules_MPPT-Controller
 
-After measuring the energy harvesting results of Solar Cell modules with different sizes, Watts and Voltages, I decided to mount 2 thin traveller modules of 12 Volt and connect them in series. That way they can produce up to 1A at 28V in full sunshine, but I let the MPPT-controller reduce I-max to 0,5A for charging the batteries in the Roller Blind. The choosen Solar cells are able to generate some Milli-Amperes at 16V power point on a cloudy day, that should be enough to compensate the consumption of the Philips Hue module.<br/>
+After comparing the energy harvesting results of Solar Cell modules with different sizes, Watts and Voltages, I decided to mount 2 thin traveller modules of 12 Volt and connect them in series. That way they can produce up to 1A at 28V in full sunshine (measured, not by the marketing sheet). The choosen Solar cells are also able to generate some Milli-Amperes at 16V power point on a cloudy day, that should be enough to compensate the consumption of the Philips Hue module.<br/>
 <br/>
 Let's do some math:<br/>
-Hue Module:<br/>
+-Hue Module:<br/>
 power needs:  3,3V * 20mA = 66mW<br/>
 running 24h:  24h * 66mW = 1600 mWh (power consumption in 1 day)<br/>
-<br/>
-Solar Modul:<br/>
+-Solar Modul:<br/>
 case-1: 16V * 100mA = 1600 mW (theoretically)<br/>
 => would need 1 hour of good sunshine to compensate the daily consumption of the Hue Module <br/>
 case-2: Solar Modul:  16V * 50mA = 800 mW (practically the conversion efficiency of the MPPT controller is 50%)<br/>
@@ -79,11 +79,11 @@ case-2: Solar Modul:  16V * 50mA = 800 mW (practically the conversion efficiency
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_01.jpg" width="500">
 <br/>
-The LT3256 is a solar MPPT controller and Li-Ion charger IC. I modified the LT3256 borad to get a MPP of 16V and a charge voltage for 8,4V (for 2 Li-Ion) cells, with a maximum current of 0,5A. Below is the final circuit of the LT3256 board I use.
+The LT3256 is a solar MPPT controller and Li-Ion charger IC. I modified the LT3256 board to set the MPP to 16V and to provide a charge voltage for 8,4V (for 2 Li-Ion) cells, with a maximum current of 0,5A. Below is the final circuit of the LT3256 board I use.
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_03_MPPT_Controller_Schematic_LT3652.jpg" width="500">
 <br/>
-To test the energy harvesting from the solar cells with the LT3256 MPPT controller, there was a need for a sink of the current like a Li-Ion cell would do it. For that I made a Li-Ion battery emulator, based on a couple of TL431 voltage adjustable shunt regulators.
+To test the energy harvesting from the solar cells with the LT3256 MPPT controller, as well as the CCCV behaviour, you need an empt battery pack, or even better a sink simulating the charge current of a Li-Ion cell. For that I made a simple Li-Ion battery emulator, based on a couple of TL431 voltage adjustable shunt regulators.
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_06_CCCV-Load-Tester_TL431.jpg" width="500">
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_05_CCCV-Load-Tester_Schematic_TL431.jpg" width="500">
@@ -107,9 +107,8 @@ The Arduino software uses the following libraries:
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo01.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo00.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo03.jpg" width="500">
-<br/>
-As of year 2020, it's easy to open a free ThingSpeak account and setup a personal IoT channel to store lots of IoT data. Just go to https://www.thingspeak.com and signup and/or login there.<br/>
-This Arduino software is configured to send data to the IoT Cloud every 15 minutes, so you can use the ThingSpeak portal or the Thingview App (iOS) to track your power data over a long time range.
+As of year 2020, it's easy to open a free ThingSpeak account and setup a personal IoT channel to store lots of IoT data.<br/>
+This Arduino software is configured to send data to the IoT Cloud every 15 minutes. So you can use the ThingSpeak portal (https://www.thingspeak.com) or the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data over a longer time range.
 <br/>
 <br/>
 
@@ -117,7 +116,7 @@ This Arduino software is configured to send data to the IoT Cloud every 15 minut
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/5_PutAllPiecesTogether
 
 Integrating all pieces: 
-- the circuitry to connect the Philips Hue module to the Roller Blind, 
+- make the circuitry to connect the Philips Hue module to the Roller Blind, 
 - use a LTC3588 as very efficient voltage converter from battery 8,4V to 3,3 Volts for the Hue Module, 
 - trigger the Roller Blind up/down using a Home Automation solution, 
 - connect the Solar Charger MPPT controller, care for cable diameter in case of larger cable length,
