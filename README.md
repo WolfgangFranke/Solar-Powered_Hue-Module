@@ -111,6 +111,8 @@ The Arduino software uses the following libraries:
 As of year 2020, it's easy to open a free ThingSpeak account and setup a personal IoT channel to store lots of IoT data.<br/>
 This Arduino software is configured to send data to the IoT Cloud every 15 minutes. You can conveniently use the ThingSpeak portal (https://www.thingspeak.com) or for example the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data as nice graphs.
 <br/>
+<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo05_ThingviewApp.jpg" width="500">
+<br/>
 <br/>
 
 ## 5 - Putting all pieces together
