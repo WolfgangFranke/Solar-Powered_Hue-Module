@@ -1,5 +1,5 @@
 # A Solar Powered Philips Hue Module (a 3,3V PWM dimmer)
-read time: 1 hour / understand time: 3 nights / re-building time: 20 hours
+read time: 1 hour / understand time: 3 nights / re-build time: 20 hours
 
 ## This project will tell you the story of building a Solar Power solution for IoT devices operating 24x7. In my case it's an autonomous remote control receiver for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
 
