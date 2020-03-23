@@ -85,20 +85,24 @@ To test the energy harvesting from the solar cells with the LT3256 MPPT controll
 
 ## 4 - Arduino ESP32 Solar Power-Meter
 
-The Power Meter measures the solar energy harvested every day and visualizes it on an OLED as wellas on the IoT Cloud from ThingSpeak by MathWorks. It is based on an ESP32 Picokit v4, but the pin layout can easily be changed to many other ESP32 deveopment boards.<br/>
-<br/>
-The Arduino software uses the following libraries:<br/>
-- as WiFi manager the IotWebConf library from Balazs Kelemen: https://github.com/prampec/IotWebConf
-- for OLED SH1106 the U8g2lib from Oli Kraus: (https://github.com/olikraus/u8g2/wiki/u8g2reference
-- for INA219 the Adafruit INA219 Library: https://github.com/adafruit/Adafruit_INA219
-- the ThingSpeak library from MathWorks: https://github.com/mathworks/thingspeak-arduino
-
+The Power Meter measures the solar energy harvested every day and visualizes it on an OLED as well as on the IoT Cloud from ThingSpeak by MathWorks (https://www.thingspeak.com).<br/>
+The implementation of the Power Meter is based on an ESP32 Picokit v4, but the pin layout can easily be changed to many other ESP32 deveopment boards.<br/>
 <br/>
 The Arduino source code of the Power Meter can be found here:<br/>
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/4_Arduino_ESP32_SolarPowerMeter/Solar_Power_Meter_ESP32_INA219_OLED-SH1106_v360<br/>
 <br/>
+The Arduino software uses the following libraries:<br/>
+- for WiFi manager the IotWebConf library from Balazs Kelemen: https://github.com/prampec/IotWebConf
+- for OLED SH1106 the U8g2lib from Oli Kraus: (https://github.com/olikraus/u8g2/wiki/u8g2reference
+- for INA219 the Adafruit INA219 Library: https://github.com/adafruit/Adafruit_INA219
+- the ThingSpeak library from MathWorks: https://github.com/mathworks/thingspeak-arduino
+<br/>
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo01.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo02.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo03.jpg" width="500">
+<br/>
+
+The graphical output on ThingSpeak shows e.g. in Field-2 the battery voltage. It can be seen that day 3 and day 4 were very cloudy and the solar modules could not deliver enough energy to compensate the consumption of the preceding day (24h). <br/>
+To lower the risk of a service interruption for the IoT device, the battery needs to be large enough to buffer a couple of cloudy days, and the solar systems needs to be strong enough to quickly fully charge the battery in case of good sunshine.
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="500">
 
