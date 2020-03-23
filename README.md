@@ -1,3 +1,5 @@
+#A Solar Powered Philips Hue Module ;-)
+
 ## This project will tell you the story of building a Solar Power solution for IoT devices operating 24x7. In my case it's an autonomous remote control receiver for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
 
 This story contains 5 work major tasks:
@@ -140,7 +142,7 @@ Important to understand is that my Home Automation Switch will generate an 1s im
 <br/>
 <img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo06.jpg" width="500">
 <br/>
-The LTC3588, with the components I tested and use in this circuit, has a high energy transmission efficiency of ≈90% for small currents like a Philips Hue module consumes. But soldering the IC is a bit difficult, because the bottom of the IC needs to be connected to GND. I used a tiny breakout board and drilled a whole to connect GND.
+The LTC3588 can act as a very efficient voltage converter for small loads. With the components used in this circuit, I tested a transmission efficiency of ≈90% for converting battery 8,4V to the 3,3 Volts at 20mA a Philips Hue module consumes. But soldering the IC is a bit difficult, because the bottom of the IC needs to be connected to GND. I used a tiny breakout board and drilled a whole to connect GND.
 <br/>
 <img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo07.jpg" width="500">
 <br/>
