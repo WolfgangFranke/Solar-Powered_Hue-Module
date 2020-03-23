@@ -108,7 +108,7 @@ The Arduino software uses the following libraries:
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo00.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo03.jpg" width="500">
 As of year 2020, it's easy to open a free ThingSpeak account and setup a personal IoT channel to store lots of IoT data.<br/>
-This Arduino software is configured to send data to the IoT Cloud every 15 minutes. So you can use the ThingSpeak portal (https://www.thingspeak.com) or the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data over a longer time range.
+This Arduino software is configured to send data to the IoT Cloud every 15 minutes. You can conveniently use the ThingSpeak portal (https://www.thingspeak.com) or for example the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data as nice graphs.
 <br/>
 <br/>
 
@@ -145,8 +145,8 @@ But soldering the LTC3855 manually is a bit difficult, because the bottom of the
 <img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo07.jpg" width="500">
 <br/>
 <br/>
-Finally, after all pieces are connected, you want to go to the ThingSpeak IoT Cloud portal (https://www.thingspeak.com), or use the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data over a longer time range.<br/>
-The graphical output on ThingSpeak shows e.g. in Field-2 the battery voltage. It can be seen in the screenshot below, that day 3 and day 4 were very cloudy and the solar modules could not deliver enough energy to compensate the consumption of the preceding day (24h).<br/>
-To lower the risk of a service interruption for the IoT device, the battery needs to be large enough to buffer a couple of cloudy days, and the solar systems needs to be strong enough to quickly fully re-charge the battery in case of good sunshine.<br/> It can be seen that day 5 very quickly charged the battery to 100% (8,4V), and after a CCCV charge stop and some discharging, also a second re-charge was done that day.<br/><br/>
+Finally, after all pieces are connected, you want to go to the ThingSpeak IoT Cloud portal (https://www.thingspeak.com), or use e.g. the Thingview App (by Marcelo Prolo, in iOS App store) to track your power data over a longer time range.<br/>
+The screenshot below shows the graphical output on ThingSpeak, Field-2 is the battery voltage. It can be seen that day 3 and day 4 were very cloudy and the solar module was not able to deliver enough energy to compensate the consumption of the preceding day (24h).<br/>
+To lower the risk of a service interruption for the IoT device, the battery needs to be large enough to buffer a couple of cloudy days, and the solar system needs to be strong enough to quickly re-charge the battery in case of good sunshine. That can be seen in day 5, when the battery was very quickly charged up to 100% (8,4V), and after the CCCV charge-stop with some discharging, then also a second complete re-charge was done that day.<br/><br/>
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="500">
 <br/>
