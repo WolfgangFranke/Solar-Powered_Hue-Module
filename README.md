@@ -98,20 +98,17 @@ The implementation of the Power Meter is based on an ESP32 Picokit v4, but the p
 The Arduino source code of the Power Meter can be found here:<br/>
 https://github.com/WolfgangFranke/Solar-Powered_Hue-Module/tree/master/4_Arduino_ESP32_SolarPowerMeter/Solar_Power_Meter_ESP32_INA219_OLED-SH1106_v360<br/>
 <br/>
-The Arduino software uses the following libraries:<br/>
+The Arduino software uses the following libraries:
 - for WiFi manager the IotWebConf library from Balazs Kelemen: https://github.com/prampec/IotWebConf
 - for OLED SH1106 the U8g2lib from Oli Kraus: (https://github.com/olikraus/u8g2/wiki/u8g2reference
-- for INA219 the Adafruit INA219 Library: https://github.com/adafruit/Adafruit_INA219
+- for INA219 current sensor the Adafruit INA219 Library: https://github.com/adafruit/Adafruit_INA219
 - the ThingSpeak library from MathWorks: https://github.com/mathworks/thingspeak-arduino
 <br/>
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo01.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo00.jpg" width="500">
 <img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo03.jpg" width="500">
 <br/>
-
-The graphical output on ThingSpeak shows e.g. in Field-2 the battery voltage. It can be seen that day 3 and day 4 were very cloudy, and the solar modules could not deliver enough energy to compensate the consumption of the preceding day (24h).<br/>
-To lower the risk of a service interruption for the IoT device, the battery needs to be large enough to buffer a couple of cloudy days, and the solar systems needs to be strong enough to quickly fully re-charge the battery in case of good sunshine.<br/> It can be seen that day 5 very quickly charged the battery to 100% (8,4V), and after a CCCV charge stop and some discharging, also a second re-charge was done that day.<br/><br/>
-<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="500">
+ThingSpeak cloud account
 <br/>
 <br/>
 
@@ -145,4 +142,10 @@ Important to understand is that my Home Automation Switch will generate an 1s im
 The LTC3588 can act as a very efficient voltage converter for small loads. With the components used in this circuit, I tested a transmission efficiency of ≈90% for converting battery 8,4V to the 3,3 Volts at 20mA a Philips Hue module consumes. But soldering the IC is a bit difficult, because the bottom of the IC needs to be connected to GND. I used a tiny breakout board and drilled a whole to connect GND.
 <br/>
 <img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo07.jpg" width="500">
+<br/>
+<br/>
+Finally, after all pieces are connected, you want to go to the ThingSpeak IoT Cloud portal, or use the Thingview App (iOS).
+The graphical output on ThingSpeak shows e.g. in Field-2 the battery voltage. It can be seen that day 3 and day 4 were very cloudy, and the solar modules could not deliver enough energy to compensate the consumption of the preceding day (24h).<br/>
+To lower the risk of a service interruption for the IoT device, the battery needs to be large enough to buffer a couple of cloudy days, and the solar systems needs to be strong enough to quickly fully re-charge the battery in case of good sunshine.<br/> It can be seen that day 5 very quickly charged the battery to 100% (8,4V), and after a CCCV charge stop and some discharging, also a second re-charge was done that day.<br/><br/>
+<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo04_ThingSpeak.jpg" width="500">
 <br/>
