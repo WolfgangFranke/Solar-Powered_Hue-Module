@@ -120,15 +120,15 @@ Integrating all pieces:
 <br/>
 The Solar Modules are mounted in the roof near the window, the small LT3652 MPPT controller board is mounted on the window frame, and the little circuit to translate Hue's PWM signal to a trigger in the Roller Blind, as well as the LTC3588 to generate 3,3V from 8,4V, is soldered into a little plastic box which is taped to the Roller Blind. All connectors are stable and secured against vibrations from operating the window.
 <br/>
-<img src="Solar-Powered_Hue-Module/5_PutAllPiecesTogether_Photo04.jpg" width="500">
-<img src="Solar-Powered_Hue-Module/5_PutAllPiecesTogether_Photo05.jpg" width="500">
-<img src="Solar-Powered_Hue-Module/5_PutAllPiecesTogether_Photo03.jpg" width="500">
+<img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo04.jpg" width="500">
+<img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo05.jpg" width="500">
+<img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo03.jpg" width="500">
 <br/>
 This circuit shows how all parts come together. 
 <br/>
-<img src="Solar-Powered_Hue-Module/5_PutAllPiecesTogether_Photo06.jpg" width="500">
+<img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo06.jpg" width="500">
 <br/>
 The LTC3588, with the components I tested and use in this circuit, has a high energy transmission efficiency of ≈90% for small currents like a Philips Hue module consumes. But soldering the IC is a bit difficult, because the bottom of the IC needs to be connected to GND. I used a tiny breakout board and drilled a whole to connect GND.
 <br/>
-<img src="Solar-Powered_Hue-Module/5_PutAllPiecesTogether_Photo07.jpg" width="500">
+<img src="5_PutAllPiecesTogether/5_PutAllPiecesTogether_Photo07.jpg" width="500">
 <br/>
