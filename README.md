@@ -1,10 +1,10 @@
-## This project will tell you the story of building a Solar Power solution for many IoT devices. In my case it's an autonomous remote control for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
+## This project will tell you the story of building a Solar Power solution for IoT devices operating 24x7. In my case it's an autonomous remote control receiver for a battery powered Roller Blind, based on a Philips Hue Module within my Home Automation application.
 
 This story contains 5 work major tasks:
 
 1. Using a Roller Blind with an integrated motor and battery pack, USB chargable, that can be operated (up/down) by e.g. pulling a string on the Roller Blind, and that will be enhanced to get triggered by an Zigbee module too.
 
-2. Connecting a Zigbee switch module to open/close the Roller Blind remotely by your Home Automation application. I show you how to re-use an ordinary Philips Hue module from an older Hue White E27 bulb.
+2. Connecting a Zigbee switch module to open/close the Roller Blind remotely by your Home Automation application. You will learn how to re-use an ordinary Philips Hue module from an older Hue White E27 bulb.
 
 3. Building a Solar Charger to supply both, the Roller Blind and the ZigBee module, to let them work 24x7 independently from a wall socket (I use 2 cheap solar modules, an LT3256 MPPT solar Li-Ion charger controller, and made a Li-Ion battery emulator based on TL431 voltage adjustable shunt regulators).
 
@@ -116,5 +116,7 @@ Integrating all pieces:
 - trigger the Roller Blind up/down using a Home Automation solution, 
 - connect the Solar Charger MPPT controller, care for cable diameter in case of larger cable length,
 - use the Power Meter to measure and visualize the charge energy and battery status of the Roller Blind.
-- login to ThingSpeak or use the Thingview App (iOS)
+- login to the ThingSpeak IoT Cloud portal, or use the Thingview App (iOS)
+<br/>
+<img src="4_Arduino_ESP32_SolarPowerMeter/4_Arduino_ESP32_SolarPowerMeter_Photo03.jpg" width="500">
 <br/>
