@@ -74,8 +74,15 @@ case-2: Solar Modul:  16V * 50mA = 800 mW (practically the conversion efficiency
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_01.jpg" width="500">
 <br/>
-The LT3256 is an solar MPPT controller and Li-Ion charger IC, I configured it to MPP of 16V and charge voltage for 2x Li-Ion cells with a maximum current of 0,5A.
+The LT3256 is a solar MPPT controller and Li-Ion charger IC. I modified the LT3256 borad to get a MPP of 16V and a charge voltage for 8,4V (for 2 Li-Ion) cells, with a maximum current of 0,5A.
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_03_MPPT_Controller_Schematic_LT3652.jpg" width="500">
+<br/>
+To test the energy harvesting from the solar cells with the LT3256 MPPT controller, there was a need for a sink of the current like a Li-Ion cell would do it. For that I made the Li-Ion battery emulator based on a couple of TL431 voltage adjustable shunt regulators.
+
+<img src="3_SolarModules_MPPT-Controller/3_SolarModules_05_CCCV-Load-Tester_Schematic_TL431.jpg" width="500">
 
 
+## 4 - Arduino ESP32 Solar Power-Meter
+
+A
