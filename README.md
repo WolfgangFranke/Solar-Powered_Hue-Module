@@ -33,7 +33,7 @@ Roller Blind interface documentation:
 <img src="1_RollerBlind/1_RollerBlind_Photo04.jpg" width="500">
 
 
-## 2 - hacking a Philips Hue Module from Hue White E27 bulb
+## 2 - Hacking a Philips Hue Module from Hue White E27 bulb
 
 Integrating the remote control of an Roller Blind is not sold or provided out-of-the-box (affordable) by the major Home Automation brands.
 I decided to use some Philips Hue technology to control my Roller Blind, because that would easily integrate into my existing Home Automation network which already includes a Philips Hue Bridge.
@@ -59,15 +59,23 @@ Philips Hue Module interface documentation:
 
 ## 3 - Solar Cells and the LT3256 MPPT Li-Ion charger controller
 
-After measuring the energy harvesting with Solar Cell modules of different sizes, Watts and Voltages, I decided to mount 2 thin traveller modules of 12 Volt and connect them in series. That way they produce up to 1A at 28V in full sunshine, but the MPPT-controller let them also generate some Milli-Amperes at 16V on a cloudy day.<br/>
+After measuring the energy harvesting results of Solar Cell modules with different sizes, Watts and Voltages, I decided to mount 2 thin traveller modules of 12 Volt and connect them in series. That way they can produce up to 1A at 28V in full sunshine, but I let the MPPT-controller reduce I-max to 0,5A for charging the batteries in the Roller Blind. The choosen Solar cells are able to generate some Milli-Amperes at 16V power point on a cloudy day, that should be enough to compensate the consumption of the Philips Hue module.<br/>
 <br/>
 Let's do some math:<br/>
-Hue Module:   3,3V * 20mA = 66mW<br/>
-running 24h:  24h * 66mW = 1600 mWh<br/>
+Hue Module:<br/>
+power needs:  3,3V * 20mA = 66mW<br/>
+running 24h:  24h * 66mW = 1600 mWh (power consumption in 1 day)<br/>
 <br/>
-Solar Modul:  16V * 100mA = 1600 mW (theoretically)<br/>
-=> would need 1 hour of good sunshine to compensate the daily consumption of the Hue Module <br/>
-Solar Modul:  16V * 50mA = 800 mW (practically the energy conversion efficiency of the MPPT controller is 50%)<br/>
-=> needs 4 hour of little sunshine to compensate the daily consumption of the Hue Module <br/>
+Solar Modul:<br/>
+case-1: 16V * 100mA = 1600 mW (theoretically)<br/>
+        => would need 1 hour of good sunshine to compensate the daily consumption of the Hue Module <br/>
+case-2: Solar Modul:  16V * 50mA = 800 mW (practically the energy conversion efficiency of the MPPT controller is 50%)<br/>
+        => needs 4 hour of little sunshine to compensate the daily consumption of the Hue Module <br/>
 
 <img src="3_SolarModules_MPPT-Controller/3_SolarModules_01.jpg" width="500">
+
+The LT3256 is an solar MPPT controller and Li-Ion charger IC, I configured it to MPP of 16V and charge voltage for 2x Li-Ion cells with a maximum current of 0,5A.
+
+<img src="3_SolarModules_MPPT-Controller/3_SolarModules_03_MPPT_Controller_Schematic_LT3652.jpg" width="500">
+
+
